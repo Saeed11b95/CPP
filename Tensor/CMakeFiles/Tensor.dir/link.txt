@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/Tensor.dir/main.cpp.o CMakeFiles/Tensor.dir/build/tensor.cpp.o -o Tensor  -lrange-v3 

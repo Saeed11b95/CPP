@@ -1,3 +1,0 @@
-/home/saeed/Desktop/CPP/Tensor/CMakeFiles/Tensor.dir
-/home/saeed/Desktop/CPP/Tensor/CMakeFiles/edit_cache.dir
-/home/saeed/Desktop/CPP/Tensor/CMakeFiles/rebuild_cache.dir
