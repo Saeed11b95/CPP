@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/saeed/Desktop/CPP/Tensor/build",
+  "command": "/usr/bin/c++ -DFMT_HEADER_ONLY=1 -isystem /home/saeed/Desktop/CPP/Tensor/build/vcpkg_installed/x64-linux/include -g -std=gnu++20 -o CMakeFiles/Tensor.dir/main.cpp.o -c /home/saeed/Desktop/CPP/Tensor/main.cpp",
+  "file": "/home/saeed/Desktop/CPP/Tensor/main.cpp",
+  "output": "CMakeFiles/Tensor.dir/main.cpp.o"
+}
+]
