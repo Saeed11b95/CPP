@@ -15,15 +15,32 @@ public:
       data[i] = i * i;
     }
   }
-  // Copy Constructor
+  // Copy Constructor Array myarray = oldarray;
   Array(const Array &rhs) {
     data = new int[10]; // Here we allocate fresh memory for out object and then
-                        // copying data one by one into the new data array.
+    // copying data one by one into the new data array.
+    std::cout << "Copy  constructor" << std::endl;
     for (int i = 0; i < 10; i++) {
       data[i] = rhs.data[i];
     }
   }
   ~Array() { delete[] data; }
+  // COPY assignment Operator, e.g once the objects have already been created
+  // arr1 = arr2;
+  // Copy assignemet operator, myarray = oldarray;
+  Array &operator=(const Array &rhs) {
+    std::cout << "Copy assignment operator" << std::endl;
+    if (&rhs == this) {
+      return *this;
+    }
+    // delete the data alread in object
+    delete[] data;
+    data = new int[10];
+    for (int i = 0; i < 10; i++) {
+      data[i] = rhs.data[i];
+    }
+    return *this;
+  }
   void printData() {
     for (int i = 0; i < 10; i++) {
       std::cout << "Element at index " << i << " is: " << data[i] << std::endl;
@@ -131,5 +148,11 @@ int main() {
   arr4.printData(); // Element at index 2 is: 9
   // We don't need copy constructors for stack arrays.
 
+  // COPY Assignmet Operator
+  Array arrr1;
+  Array arrr2 = arrr1; // Copy Constructor
+  Array arrr3;
+  arrr3 = arr1; // Copy assignement operator
+                // ========================= END =========================
   return 0;
 }
